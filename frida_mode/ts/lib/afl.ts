@@ -581,7 +581,7 @@ class Afl {
     []);
 
   private static readonly jsApiWrite = new NativeFunction(
-    /* tslint:disable-next-line:no-null-keyword */
+    // eslint-disable-next-line no-restricted-syntax
     Module.getExportByName(null, "write"),
     "int",
     ["int", "pointer", "int"]);

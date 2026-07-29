@@ -375,5 +375,4 @@ Afl.jsApiSetStdOut = Afl.jsApiGetFunction("js_api_set_stdout", "void", ["pointer
 Afl.jsApiSetTraceable = Afl.jsApiGetFunction("js_api_set_traceable", "void", []);
 Afl.jsApiSetVerbose = Afl.jsApiGetFunction("js_api_set_verbose", "void", []);
 Afl.jsApiWrite = new NativeFunction(
-/* tslint:disable-next-line:no-null-keyword */
 Module.getExportByName(null, "write"), "int", ["int", "pointer", "int"]);
